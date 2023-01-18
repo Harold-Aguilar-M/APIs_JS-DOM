@@ -1,0 +1,72 @@
+.nav-hamburger{
+    background-color: var(--main-color-op);
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 990;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    transition: transform 0.3s ease;
+    transform: translate(100%, 0);
+}
+
+.nav-hamburger.is-active{
+    transform: translate(0,0);
+}
+
+.list-hamburger{
+    padding: 0;
+    margin: 0;
+}
+
+.list-hamburger li{
+    list-style: none;
+    background-color: var(--main-color-op);
+}
+
+.list-hamburger li > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.list-hamburger li > a:link{
+    text-decoration: none;
+    color: #efefef;
+}
+
+.list-hamburger li > a:visited{
+    color: #efefef;
+}
+
+.list-hamburger li > a:hover{
+    background-color: var(--main-color-op);
+}
+
+.button-nav{
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 999;
+    height: 2.5rem;
+    width: 2.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background-color: var(--main-color);
+    color: var(--second-color);
+
+}
+
+.button-nav:hover{
+    background-color: var(--main-color-op);
+    cursor: pointer;
+}
